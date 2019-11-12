@@ -1,0 +1,52 @@
+#banner {
+  padding: 15px 32px;
+  font-size: 1em;
+  background-color: #3f72af;
+  color: white;
+  margin-bottom: 0;
+}
+
+#magIcon {
+  /* float: right; */
+  width: 20px;
+  cursor: pointer;
+}
+
+#citySearchColumn {
+  background-color: #dbe2ef;
+  padding: 40px 20px 190px;
+  text-align: center;
+}
+
+.test1 {
+  background-color: blue;
+}
+
+.test2 {
+  background-color: red;
+}
+
+.topWeather {
+  padding: 0
+}
+
+.main1 {
+  background-color: yellow;
+  border: solid black 5px;
+  height: 550px;
+  width: 700px;
+}
+
+.bottomWeather {
+  padding: 0;
+  border: solid black 5px;
+  height: 241px;
+  width: 280px;
+}
+
+.main2 {
+  background-color: green;
+  border: solid black 5px;
+  height: 550px;
+  width: 700px;
+}

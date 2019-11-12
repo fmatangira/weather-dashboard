@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/font-awesome.css">
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+  <div class="jumbotron d-flex justify-content-center" id="banner">
+    <h1 class="display-3">Weather Dashboard</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2" id="citySearchColumn">
+        <form>
+          <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input type="search" placeholder="Search for a city..." aria-describedby="button-addon1" class="form-control border-0 bg-light" id="searchBar">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i><img src="assets/images/magnifyingglass.jpg" id="magIcon"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action" id="cityNYC">New York</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityLAX">Los Angeles</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityCHI">Chicago</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityHOU">Houston</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityPHX">Phoenix</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityCLT">Charlotte</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityVEG">Las Vegas</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityMIA">Miami</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityATL">Atlanta</button>
+            <button type="button" class="list-group-item list-group-item-action" id="cityDNV">Denvers</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-10">
+        <div class="row test1">
+          <div class="col topWeather">
+            <div class="main1"></div>
+          </div>
+          <div class="col topWeather">
+            <div class="main2"></div>
+          </div>
+        </div>
+        <div class="row test2">
+          <div class="col bottomWeather">
+            <div class="day1Weather"></div>
+          </div>
+          <div class="col bottomWeather">
+            <div class="day2Weather"></div>
+          </div>
+          <div class="col bottomWeather">
+            <div class="day3Weather"></div>
+          </div>
+          <div class="col bottomWeather">
+            <div class="day4Weather"></div>
+          </div>
+          <div class="col bottomWeather">
+            <div class="day5Weather"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="assets/scripts.js" charset="utf-8"></script>
+</body>
+
+</html>
