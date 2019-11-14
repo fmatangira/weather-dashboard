@@ -19,7 +19,7 @@
 }
 
 .test1 {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .test2 {
@@ -27,14 +27,15 @@
 }
 
 .topWeather {
-  padding: 0
+  background-color: #3c60aa;
+  padding: 0;
 }
 
-.main1 {
-  background-color: yellow;
-  border: solid black 5px;
-  height: 550px;
-  width: 700px;
+.weatherShow {
+  background-color: #3c60aa;
+  /* border: solid black 5px; */
+  /* height: 550px;
+  width: 700px; */
 }
 
 .bottomWeather {
@@ -45,8 +46,29 @@
 }
 
 .main2 {
-  background-color: green;
-  border: solid black 5px;
+  background-color: #becef0;
+  /* border: solid black 5px; */
   height: 550px;
   width: 700px;
+}
+
+#weatherIconMain {
+  width: 200px;
+  padding-top: 35px;
+}
+
+.temperatureBlock {
+  padding: 0;
+  /* float: right; */
+}
+
+.temperatureMain {
+  padding-top: 20%;
+  font-size: 150px;
+}
+
+.weatherDesc {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 80px;
 }
