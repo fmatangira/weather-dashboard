@@ -29,6 +29,7 @@
 .topWeather {
   background-color: #3c60aa;
   padding: 0;
+  box-shadow: 0 5px 0 0;
 }
 
 .weatherShow {
@@ -52,9 +53,17 @@
   width: 700px;
 }
 
+#cityMain {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+
 #weatherIconMain {
-  width: 200px;
-  padding-top: 35px;
+  width: 230px;
+  padding: 15px 0 0 20px;
 }
 
 .temperatureBlock {
@@ -63,12 +72,14 @@
 }
 
 .temperatureMain {
-  padding-top: 20%;
+  padding-top: 30px;
   font-size: 150px;
+  color: white;
 }
 
 .weatherDesc {
   text-align: center;
-  padding-top: 50px;
-  font-size: 80px;
+  padding-top: 25px;
+  font-size: 70px;
+  color: white;
 }
