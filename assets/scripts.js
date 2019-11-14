@@ -4,9 +4,16 @@ var currentCoords = {
   long: ""
 };
 var openWeatherURL;
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
 
 $(document).ready(function() {
 
+  //WHEN USER AGREES TO SHARE LOCATION, GET DATA FOR THEIR CURRENT POSITION
   function currentLocalWeather() {
 
     navigator.geolocation.getCurrentPosition(function(pos) {
@@ -32,12 +39,17 @@ $(document).ready(function() {
         $('#weatherIconMain').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         $('.temperatureMain').text(Math.round(data.main.temp) + '°F');
         $('.weatherDesc').text(capitalize_Words(data.weather[0].description));
+        $('#dateMain').text(today);
+        $('#humidity').text(`Humidity: ${data.main.humidity}%`);
+        $('#windSpeed').text(`Wind Speed: ${data.wind.speed} MPH`);
+        $('#Pressure').text(`Pressure: ${data.main.pressure} in.`);
         // console.log(data.weather[0].icon);
       });
 
     });
   }
 
+  //GET DATA FROM USER INPUT BY CLICKING SEARCH BUTTON OR PRESSING ENTER
   function searchHistory() {
 
     $('#button-addon1').on('click', function(event) {
@@ -64,6 +76,10 @@ $(document).ready(function() {
           $('#weatherIconMain').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
           $('.temperatureMain').text(Math.round(data.main.temp) + '°F');
           $('.weatherDesc').text(capitalize_Words(data.weather[0].description));
+          $('#dateMain').text(today);
+          $('#humidity').text(`Humidity: ${data.main.humidity}%`);
+          $('#windSpeed').text(`Wind Speed: ${data.wind.speed} MPH`);
+          $('#Pressure').text(`Pressure: ${data.main.pressure} in.`);
           // console.log(data.weather[0].icon);
         });
 
@@ -72,6 +88,7 @@ $(document).ready(function() {
 
   }
 
+  // GET DATA FROM CLICKING ON BUTTONS IN SEARCH HISTORY
   function cityData() {
     var city = $(this).text();
     console.log(city);
@@ -91,6 +108,10 @@ $(document).ready(function() {
       $('#weatherIconMain').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
       $('.temperatureMain').text(Math.round(data.main.temp) + '°F');
       $('.weatherDesc').text(capitalize_Words(data.weather[0].description));
+      $('#dateMain').text(today);
+      $('#humidity').text(`Humidity: ${data.main.humidity}%`);
+      $('#windSpeed').text(`Wind Speed: ${data.wind.speed} MPH`);
+      $('#Pressure').text(`Pressure: ${data.main.pressure} in.`);
       // console.log(data.weather[0].icon);
     });
 
