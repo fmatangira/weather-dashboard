@@ -36,7 +36,7 @@ $(document).ready(function() {
         method: "GET"
       }).then(function(data) {
         $('#cityMain').text(data.name);
-        $('#weatherIconMain').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+        $('#weatherIconMain').attr('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         $('.temperatureMain').text(Math.round(data.main.temp) + '°F');
         $('.weatherDesc').text(capitalize_Words(data.weather[0].description));
         $('#dateMain').text(today);
@@ -73,7 +73,7 @@ $(document).ready(function() {
         }).then(function(data) {
           console.log(data);
           $('#cityMain').text(data.name);
-          $('#weatherIconMain').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+          $('#weatherIconMain').attr('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
           $('.temperatureMain').text(Math.round(data.main.temp) + '°F');
           $('.weatherDesc').text(capitalize_Words(data.weather[0].description));
           $('#dateMain').text(today);
@@ -105,7 +105,7 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(data) {
       $('#cityMain').text(data.name);
-      $('#weatherIconMain').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+      $('#weatherIconMain').attr('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
       $('.temperatureMain').text(Math.round(data.main.temp) + '°F');
       $('.weatherDesc').text(capitalize_Words(data.weather[0].description));
       $('#dateMain').text(today);
