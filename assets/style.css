@@ -101,3 +101,29 @@ font-size: 55px;
 #humidity {
   padding-top: 40px;
 }
+
+#weatherIconBottom {
+  text-align: center;
+  height: 90px;
+}
+
+.weatherDescBottom h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.temperatureMin,.temperatureMax {
+  text-align: center;
+  font-size: 25px;
+}
+
+.weatherBottomDate h1 {
+  margin: 0;
+  padding-top: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.minTempCol,.maxTempCol {
+  padding: 0;
+}
